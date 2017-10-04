@@ -10,5 +10,5 @@ python:
 script: 
   - "python TestEdades.py"
   - "coverage run --branch TestEdades.py"
-  - "cd tests"
+  - "cd test"
   - "lettuce"
