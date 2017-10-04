@@ -7,6 +7,8 @@ class Edades():
 
     def edad(self, edad):
         try:
+            #ya se quito v que causaba que no pasara
+            #el falke8
             int(edad)
         except:
             return 'no es un numero'
