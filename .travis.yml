@@ -1,0 +1,14 @@
+--- 
+before_script: 
+  - "autopep8 -ir *"
+  - "flake8 --max-complexity=8 --exclude=*.txt,*.md,*.pyc *"
+
+install: "pip install -r requerimientos.txt"
+language: python
+python: 
+  - "2.7"
+script: 
+  - "python TestEdades.py"
+  - "coverage run --branch TestEdades.py"
+  - "cd tests"
+  - "lettuce"
