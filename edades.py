@@ -7,7 +7,7 @@ class Edades():
 
     def edad(self, edad):
         try:
-            v = int(edad)
+            int(edad)
         except:
             return 'no es un numero'
 
